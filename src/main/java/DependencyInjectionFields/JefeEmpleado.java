@@ -35,4 +35,15 @@ public class JefeEmpleado implements Empleado {
     public String getInforme() {
         return "informe creado por el jefe empleado " + informe.getInforme();
     }
+
+    //metodo init. Ejecutar taeras antes de que el bean este disponible
+    // no necesariamente tiene que llamarse init
+    public void inicial() {
+        System.out.println("inicio");
+    }
+    //metodo destroy. Ejecutar tareas despues de que el bean haya sido utilizado
+    public void destruir() {
+        System.out.println("destruir");
+    }
 }
+
