@@ -1,1 +1,2 @@
 annotations.ComercialExperimentado=org.springframework.stereotype.Component
+annotations.Informe=org.springframework.stereotype.Component
