@@ -43,3 +43,8 @@ Init y destroy para ciclo de vida
     @PostConstruct
     @PreDestroy
     Para estos metodos no se puede trabajar con el patron prototype
+    Estos metodos no funcionan para versiones mayores a 9, se tienen que usar importando la libreria de javax.annotation
+    Al usar Prototype, el ciclo de vida del bean no funciona de la misma manera, por lo tanto se debe usar con singleton para utilizar estos metodos.
+
+@Configuration
+    Como configurar Spring con codigo java prescindiendo de XML
