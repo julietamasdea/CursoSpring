@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 //usoannotations pongo "comercialExperimentado" que es el nombre de la clase con la primera letra minuscula
 
 public class ComercialExperimentado implements IEmpleados{
+    @Autowired
     private Informe informe;
     /*
     @Autowired //esto hace que spring busque en todo el proyecto si hay alguna clase que implemente la interfaz Informe
@@ -15,10 +16,6 @@ public class ComercialExperimentado implements IEmpleados{
         this.informe = informe;
     }
      */
-    @Autowired
-    public void loquesea(Informe informe) {
-        this.informe = informe;
-    }
 
     @Override
     public String getTareas() {
