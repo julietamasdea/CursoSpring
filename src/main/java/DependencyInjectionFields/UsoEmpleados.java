@@ -1,4 +1,4 @@
-package DependencyInjectionSetter;
+package DependencyInjectionFields;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -17,9 +17,11 @@ public class UsoEmpleados {
         4) cerrar el xml
          */
         ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Empleado Juan = contexto.getBean("empleado", Empleado.class);
+        JefeEmpleado Juan = contexto.getBean("empleado", JefeEmpleado.class);
         System.out.println(Juan.getTareas());
         System.out.println(Juan.getInforme());
+        System.out.println(Juan.getEmail());
+        System.out.println(Juan.getNombreEmpresa());
 
         Empleado Leo = contexto.getBean("secretarioEmpleado", Empleado.class);
         System.out.println(Leo.getTareas());

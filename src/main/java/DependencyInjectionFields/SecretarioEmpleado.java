@@ -1,7 +1,6 @@
-package DependencyInjectionSetter;
+package DependencyInjectionFields;
 
-public class JefeEmpleado implements Empleado {
-
+public class SecretarioEmpleado implements Empleado {
     private CreacionInformes informe;
 
     public void setInforme(CreacionInformes informe) {
@@ -10,11 +9,12 @@ public class JefeEmpleado implements Empleado {
 
     @Override
     public String getTareas() {
-        return "Gestiono las cuestiones relativas a mis empleados de seccion";
+        return "secretario";
     }
 
     @Override
     public String getInforme() {
-        return "informe creado por el jefe empleado " + informe.getInforme();
+        return ("Informe generado por secretario " + informe.getInforme());
     }
+
 }
