@@ -8,12 +8,15 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
+<context:property-placeholder location="classpath:datosEmpresa.properties"></context:property-placeholder>
+
+
 <bean id="informe" class="DependencyInjectionFields.Informe"></bean>
 
 <bean id="empleado" class="DependencyInjectionFields.JefeEmpleado">
     <property name="informe" ref="informe"></property>
-    <property name="email" value="juan@gmail.com"></property>
-    <property name="nombreEmpresa" value="Disney"></property>
+    <property name="email" value="${email}"></property>
+    <property name="nombreEmpresa" value="${nombreEmpresa}"></property>
 </bean>
     
 <bean id="secretarioEmpleado" class="DependencyInjectionFields.SecretarioEmpleado">
