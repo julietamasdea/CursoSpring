@@ -31,9 +31,18 @@ Java annotations
 	Tambien se puede mantener el criterio, tratar de tener una coherencia con el resto del proyecto
 
 @Qualifier
-La utilizamos cuando necesitamos especificar el id de un bean en concreto cuando hacemos una inyeccion de dependencias: esto es para el caso que tengamos mas de una clase que implementa una interfaz
-Notacion:
-    @Autowired
-    @Qualifier("informeFinanciero")
+    La utilizamos cuando necesitamos especificar el id de un bean en concreto cuando hacemos una inyeccion de dependencias: esto es para el caso que tengamos mas de una clase que implementa una interfaz
+    Notacion:
+        @Autowired
+        @Qualifier("informeFinanciero")
 
 Singleton y prototype con annotations
+    @Scope("prototype") -->en la clase, despues de @component
+
+Init y destroy para ciclo de vida
+    @PostConstruct
+    @PreDestroy
+    Para estos metodos no se puede trabajar con el patron prototype
+    Estos metodos no funcionan para versiones mayores a 9, se tienen que usar importando la libreria de javax.annotation
+    Al usar Prototype, el ciclo de vida del bean no funciona de la misma manera, por lo tanto se debe usar con singleton para utilizar estos metodos.
+

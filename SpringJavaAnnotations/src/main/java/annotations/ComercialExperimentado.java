@@ -5,10 +5,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component("ComercialExperimentado") //spring gracias a esta notacion crea el bean
 //no necesariamente hay que darle un id al componente, si no lo quiero hacer directamente en el
 //usoannotations pongo "comercialExperimentado" que es el nombre de la clase con la primera letra minuscula
-@Scope("prototype") //para que use prototype
 public class ComercialExperimentado implements IEmpleados{
     @Autowired
     @Qualifier("informeFinanciero")
@@ -31,4 +33,15 @@ public class ComercialExperimentado implements IEmpleados{
         return informe.getInformeFinanciero();
     }
 
+    //ejecucion de codigo despues de creacion de bean
+    @PostConstruct
+    public void ejecutarInicio() {
+        System.out.println("inicio");
+    }
+
+    //ejecucion de codigo despues de terminar contenedor Spring
+    @PreDestroy
+    public void ejecutarDestroy() {
+        System.out.println("destroy");
+    }
 }
