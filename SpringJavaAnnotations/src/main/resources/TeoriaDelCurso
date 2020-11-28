@@ -1,0 +1,31 @@
+Java annotations
+	Son etiquetas que se añaden a las clases, metodos, campos, variables en un programa java
+	Sirven para añadir metadatos a nuestras clases, cuando programamos una clase en java, usamos java anotations
+	metadatos= conjunto de datos que describen el contenido y proposito de un objeto, nos permiten prescindir de el archivo xml
+
+	Spring escanea el codigo de todas nuestras clases en busca de annotations (para esto hay que preparar el archivo xml para que lo haga)
+	Una vez que encuentra annotation registra el bean de forma automatica en el contenedor
+	- Mayor facilidad a la hora de configurar los beans
+	- Simplifica el codigo en el archivo de configuracion XML
+	- especialmente util cuando debemos configurar cientos de beans en un programa
+
+	Para usar las java annotations:
+	1) preparar el xml para que spring escanee nuestro codigo
+	2) agregar annotations a nuestrasc lases de java
+	3) pedir el vean al contenedor
+
+	Ej, @override es un java annotation
+
+	Al comienzo de una clase:
+	@Component("ComercialExperimentado") //spring gracias a esta notacion crea el bean
+
+	Autowired: permite inyeccion de dependencias con constructor
+	1) crear clase e interfaz a inyectar
+	2) Crear constructor en la clase que lo necesite
+	3) configurar la dependencia @autowired
+
+	Inyeccion de dependencias en lugar de usar autowired, usando un seter, con metodo normal y con campo de clase
+	Cual usar? depende del contexto. Si estamos usando una aplicacion y necesitamos crear inyeccion de dependencia, y la clase tiene un monton de setters, entonces capaz lo mejor sea con un metodo cualquiera o con un campo de clase
+	Si tiene muchos constructores, capaz lo mejor sea crear un constructor mas con el autowired
+	Si hay muchos constructores y muchos setters, tal vez lo mejor sea en campo de clase
+	Tambien se puede mantener el criterio, tratar de tener una coherencia con el resto del proyecto
