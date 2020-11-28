@@ -16,7 +16,7 @@ public class ComercialExperimentado implements IEmpleados{
     }
      */
     @Autowired
-    public void setInforme(Informe informe) {
+    public void loquesea(Informe informe) {
         this.informe = informe;
     }
 
