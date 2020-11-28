@@ -8,10 +8,10 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
+<bean id="informe" class="DependencyInjectionConstructor.Informe"></bean>
 
-
-<bean id="empleado" class="InversionOfControl.JefeEmpleado">
-
+<bean id="empleado" class="DependencyInjectionConstructor.JefeEmpleado">
+    <constructor-arg ref="informe"></constructor-arg>
 </bean>
 
 </beans>

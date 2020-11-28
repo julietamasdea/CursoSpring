@@ -1,4 +1,4 @@
-package InversionOfControl;
+package DependencyInjectionConstructor;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -19,6 +19,7 @@ public class UsoEmpleados {
         ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("applicationContext.xml");
         Empleado Juan = contexto.getBean("empleado", Empleado.class);
         System.out.println(Juan.getTareas());
+        System.out.println(Juan.getInforme());
         contexto.close();
     }
 }
