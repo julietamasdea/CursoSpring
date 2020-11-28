@@ -2,12 +2,13 @@ package annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("ComercialExperimentado") //spring gracias a esta notacion crea el bean
 //no necesariamente hay que darle un id al componente, si no lo quiero hacer directamente en el
 //usoannotations pongo "comercialExperimentado" que es el nombre de la clase con la primera letra minuscula
-
+@Scope("prototype") //para que use prototype
 public class ComercialExperimentado implements IEmpleados{
     @Autowired
     @Qualifier("informeFinanciero")

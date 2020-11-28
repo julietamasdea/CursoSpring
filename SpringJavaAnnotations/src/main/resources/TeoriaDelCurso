@@ -35,3 +35,5 @@ La utilizamos cuando necesitamos especificar el id de un bean en concreto cuando
 Notacion:
     @Autowired
     @Qualifier("informeFinanciero")
+
+Singleton y prototype con annotations

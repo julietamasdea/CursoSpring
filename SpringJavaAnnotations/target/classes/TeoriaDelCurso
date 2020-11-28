@@ -17,7 +17,7 @@ Java annotations
 	Ej, @override es un java annotation
 
 	Al comienzo de una clase:
-	@Component("ComercialExperimentado") //spring gracias a esta notacion crea el bean
+@Component("ComercialExperimentado") //spring gracias a esta notacion crea el bean
 
 	Autowired: permite inyeccion de dependencias con constructor
 	1) crear clase e interfaz a inyectar
@@ -32,3 +32,8 @@ Java annotations
 
 @Qualifier
 La utilizamos cuando necesitamos especificar el id de un bean en concreto cuando hacemos una inyeccion de dependencias: esto es para el caso que tengamos mas de una clase que implementa una interfaz
+Notacion:
+    @Autowired
+    @Qualifier("informeFinanciero")
+
+Singleton y prototype con annotations
