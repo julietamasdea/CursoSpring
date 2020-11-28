@@ -1,2 +1,4 @@
 annotations.ComercialExperimentado=org.springframework.stereotype.Component
-annotations.Informe=org.springframework.stereotype.Component
+annotations.InformeComun=org.springframework.stereotype.Component
+annotations.InformeFinanciero=org.springframework.stereotype.Component
+annotations.InformeRRHH=org.springframework.stereotype.Component
