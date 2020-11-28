@@ -9,9 +9,14 @@ import org.springframework.stereotype.Component;
 
 public class ComercialExperimentado implements IEmpleados{
     private Informe informe;
-
+    /*
     @Autowired //esto hace que spring busque en todo el proyecto si hay alguna clase que implemente la interfaz Informe
     public ComercialExperimentado(Informe informe) {
+        this.informe = informe;
+    }
+     */
+    @Autowired
+    public void setInforme(Informe informe) {
         this.informe = informe;
     }
 
