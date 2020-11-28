@@ -11,9 +11,11 @@ public class UsoAnnotations {
         //leer el class de configuracion
         AnnotationConfigApplicationContext contexto = new AnnotationConfigApplicationContext(EmpleadosConfig.class);
 
-        IEmpleados empleado = contexto.getBean("empleadoRRHH", IEmpleados.class);
+        EmpleadoRRHH empleado = contexto.getBean("empleadoRRHH", EmpleadoRRHH.class);
         System.out.println(empleado.getTareas());
         System.out.println(empleado.getInformes());
+        System.out.println(empleado.getEmail());
+        System.out.println(empleado.getNombreEmpresa());
 
         //cerrar contexto
         contexto.close();

@@ -54,3 +54,8 @@ Init y destroy para ciclo de vida
     @Component es una anotación a nivel de clase. Y sirve para que Spring auto-configure los bean disponibles a partir de su definición. Como habrás visto en el curso, el uso de @Component es poco flexible dado que las relaciones tienen que ser una-a-una (Recuerda que si hay varias candidatos para realizar una inyección es necesario usar @Qualifier y solo puedes seleccionar uno).
 
     @Bean es una anotación a nivel de método y es más flexible (también hay que escribir más líneas). Permite que definas el bean con las inyecciones exactas que deseas, en lugar de dejar que Spring lo haga con su auto-scaneo y auto-configuración. Vuelvo al mismo ejemplo, si en para una clase tienes una inyección donde pueden existir varias candidatas, no estás atado a tener que elegir una de ellas (@Qualifier) sino que puedes definir un bean para cada alternativa según tus necesidades.
+
+
+@PropertySource y @Value
+    Sirve para inyectar valores de propiedades desde un archivo externo
+    Creamos un archivo con pareja de nombre variable y nombre valor
