@@ -48,3 +48,6 @@ Init y destroy para ciclo de vida
 
 @Configuration
     Como configurar Spring con codigo java prescindiendo de XML
+
+@Beans
+    Como pedir beans al contenedor de spring con codigo java prescindiendo de xml
