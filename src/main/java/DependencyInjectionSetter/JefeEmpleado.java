@@ -1,10 +1,10 @@
-package DependencyInjectionConstructor;
+package DependencyInjectionSetter;
 
 public class JefeEmpleado implements Empleado {
-    //Creacion de campo tipo creacion informe (interfaz)
+
     private CreacionInformes informe;
-    //creacion de constructor que inyecta la dependencia
-    public JefeEmpleado(CreacionInformes informe) {
+
+    public void setInforme(CreacionInformes informe) {
         this.informe = informe;
     }
 
@@ -15,6 +15,6 @@ public class JefeEmpleado implements Empleado {
 
     @Override
     public String getInforme() {
-        return "informe creado por el jefe empleado" + informe.getInforme();
+        return "informe creado por el jefe empleado " + informe.getInforme();
     }
 }

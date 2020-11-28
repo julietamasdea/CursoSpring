@@ -1,4 +1,4 @@
-package DependencyInjectionConstructor;
+package DependencyInjectionSetter;
 
 public class Informe implements CreacionInformes {
 

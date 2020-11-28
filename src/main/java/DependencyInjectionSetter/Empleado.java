@@ -1,4 +1,4 @@
-package DependencyInjectionConstructor;
+package DependencyInjectionSetter;
 
 public interface Empleado {
     public String getTareas() ;

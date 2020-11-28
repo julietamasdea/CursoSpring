@@ -1,4 +1,4 @@
-package DependencyInjectionConstructor;
+package DependencyInjectionSetter;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,6 +20,11 @@ public class UsoEmpleados {
         Empleado Juan = contexto.getBean("empleado", Empleado.class);
         System.out.println(Juan.getTareas());
         System.out.println(Juan.getInforme());
+
+        Empleado Leo = contexto.getBean("secretarioEmpleado", Empleado.class);
+        System.out.println(Leo.getTareas());
+        System.out.println(Leo.getInforme());
+
         contexto.close();
     }
 }
