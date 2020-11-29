@@ -36,3 +36,12 @@ Agregar contenido estatico:
     Imagenes
     Css
     Hoja externa de javascript, o lo que sea
+
+//////
+Archivos WAR -> empaquetados para aplicaciones JEE
+	Asegurarse que el servidor esta detenido
+	Elegir la opcion de exportar a un archivo war
+Levantar servidor
+En al ruta de glassfish: C:\AppServers\glassfish-5.0.1\glassfish5\glassfish\bin>
+ejecutar el comando: asadmin deploy C:\Users\julieta.masdea\Desktop\SpringWebApplications-1.0.war
+despues en la url:  http://localhost:8080/SpringWebApplications-1.0/

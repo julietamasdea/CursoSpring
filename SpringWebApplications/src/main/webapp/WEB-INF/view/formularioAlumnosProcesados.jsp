@@ -17,6 +17,6 @@
         <br>
         ${mensajeFinal}
 <p>El contextPath es: ${pageContext.request.contextPath}</p>
-        <img alt ="foto" src="${pageContext.request.contextPath}/resources/static/images/springimage.png">
+        <img alt ="foto" src="${pageContext.request.contextPath}/WEB-INF/classes/static/images/springimage.png">
     </body>
 </html>
