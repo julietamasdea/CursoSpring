@@ -1,0 +1,23 @@
+Aplicaciones Web
+    MVC= modelo vista controlador
+        Es un patron de diseño a la hora de crear aplicaciones web que siguen casi todos los frameworks
+        Este patron de diseño consiste en dividir nuestras aplicaciones en tres partes:
+            Controlador ->
+            Modelo ->
+            Vista ->
+        El usuario hace una peticion (ejemplo un viaje en un hotel, o un vuelo), esa peticion la toma el controlador. El controlador la procesa y necesita contactar con el modelo, el modelo es donde se almacenan los datos (vuelos, fechas, etc, generalmente se usa una base de datos para esto) luego, el modelo le proporciona la informacion
+        Una vez que el controlador tiene la informacion necesaria, se la envia a la vista, la vista es la pagina web. Una vez que esa infromacion esta en la vista, el usuario ve la respuesta
+        Ventajas del MVC
+            Favorece el desarrollo
+            Favorece el mantenimiento
+            Favorece la depuracion
+            Favorece la escalabilidad
+        El controlador corresponde a un servlet --> en spring hay diferentes formas de construirlo
+        La vista generalmente se construye con JSP
+        El modelo casi siempre corresponde a una BD
+    Los errores que tuve los arregle agregando esto al pom, y cambiandole para que coincida con la release de spring que tiene el netbeans
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>4.3.25.RELEASE</version>
+    </dependency>
