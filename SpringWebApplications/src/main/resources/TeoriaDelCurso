@@ -113,3 +113,17 @@ Validacion de formularios
     </dependency>
 
     Aclaracion: el problema de las validaciones de html5, es que se hacen del lado del cliente por lo que podrian quitarse desde el navegador. Lo mas seguro es hacerlo del lado del servidor
+
+    Para validar los espacios en blanco se puede usar:
+    @InitBinder
+         Comprueba la peticion al controlador antes de que llegue a este
+         Se aplica la anotacion a un metodo que sera el encargado de procesar previamente la peticion
+         Se ejecuta el metodo
+         Se ejecuta el resto de la peticion si no hay espacios en blanco
+    StringTrimmerEditor
+    Uso:
+    @InitBinder
+    public void miBinder(WebDataBinder webDataBinder) {
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        webDataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
