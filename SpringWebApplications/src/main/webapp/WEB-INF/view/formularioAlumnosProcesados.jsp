@@ -13,5 +13,7 @@
     </head>
     <body>
         Hola ${param.nombreAlumno}, bienvenido al curso de spring!
+        <br>
+        ${mensajeFinal}
     </body>
 </html>

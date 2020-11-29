@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Completar formulario</h1>
-        <form action="procesaFormularioAlumnos" method="get">
+        <form action="procesaDatosFormularioAlumnos" method="get">
             <input type="text" name ="nombreAlumno">
             <input type="submit">
         </form>

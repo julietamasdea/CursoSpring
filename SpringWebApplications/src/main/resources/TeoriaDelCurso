@@ -14,7 +14,10 @@ Aplicaciones Web
             Favorece la escalabilidad
         El controlador corresponde a un servlet --> en spring hay diferentes formas de construirlo
         La vista generalmente se construye con JSP
-        El modelo casi siempre corresponde a una BD
+        El modelo casi siempre corresponde a una BD, pero no necesariamente tiene que ser una BD, pueden estar en un fichero. Pueden estar en cualquier contenedor de datos.
+            Podemos agregar informacion de BBDD; objetos de java(String, date, colleciones) para agregar info al modelo, vamos a usar la interfaz
+            Model, que tiene un metodo sobrecargado, que es el "addAttribute()"
+            en https://docs.spring.io/spring-framework/docs/current/javadoc-api/ model
     Los errores que tuve los arregle agregando esto al pom, y cambiandole para que coincida con la release de spring que tiene el netbeans
     <dependency>
         <groupId>org.springframework</groupId>
