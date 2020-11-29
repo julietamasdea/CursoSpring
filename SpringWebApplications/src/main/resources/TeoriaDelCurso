@@ -64,6 +64,8 @@ En estos casos se pueden establecer rutas relativas --> esto lo hacemos agregand
 
 /////
 Form MVC tags
+https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/view.html
+
     Vista 1- Va a haber un formulario donde los alumnos se van a registrar (aca usamos  Form MVC tags)
     Vista 2- Alumno confirmado (JSP tags)
     Clase alumno para objetos
@@ -80,3 +82,17 @@ Form MVC tags
     Menus desplegables y selecciones multiples
         para seleccion simple --> <form:select path="asignaturaOptativa">
         para seleccion multiple --> <form:select path="asignaturaOptativa" multiple="true">
+
+    RadioButtons Radio Buttons
+            <td>Genero</td>
+            <td>Hombre: <form:radiobutton path="genero" value="H"/> <br/>
+                Mujer: <form:radiobutton path="genero" value="M"/> </td>
+            </tr>
+    Checkboxes
+        <td>
+            <%-- Approach 2: Property is of an array or of type java.util.Collection --%>
+            Voley: <form:checkbox path="deporte" value="Voley"/>
+            Basquet: <form:checkbox path="deporte" value="Basquet"/>
+            HandBall: <form:checkbox path="deporte" value="HandBall"/>
+
+        </td>

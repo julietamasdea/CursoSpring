@@ -36,6 +36,29 @@
 
                   </tr>
                   <tr>
+                    <td>Genero</td>
+                    <td>Hombre: <form:radiobutton path="genero" value="H"/> <br/>
+                        Mujer: <form:radiobutton path="genero" value="M"/> </td>
+                    </tr>
+                  <tr>
+
+                <tr>
+                    <td>Deporte:</td>
+                    <td>
+                        <%-- Approach 2: Property is of an array or of type java.util.Collection --%>
+                        Voley: <form:checkbox path="deporte" value="Voley"/>
+                        Basquet: <form:checkbox path="deporte" value="Basquet"/>
+                        HandBall: <form:checkbox path="deporte" value="HandBall"/>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite Word:</td>
+                    <td>
+                        <%-- Approach 3: Property is of type java.lang.Object --%>
+                        Magic: <form:checkbox path="favouriteWord" value="Magic"/>
+                    </td>
+                </tr>
                       <td colspan="2">
                           <input type="submit" value="Enviar" />
                       </td>
