@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World! from paginaEjemplo</h1>
-    <a href="muestraFormularioAlumnos">Ir al formulario</a>
+        Hola ${param.nombreAlumno}, bienvenido al curso de spring!
     </body>
 </html>

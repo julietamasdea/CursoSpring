@@ -12,7 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World! from paginaEjemplo</h1>
-    <a href="muestraFormularioAlumnos">Ir al formulario</a>
+        <h1>Completar formulario</h1>
+        <form action="procesaFormularioAlumnos" method="get">
+            <input type="text" name ="nombreAlumno">
+            <input type="submit">
+        </form>
     </body>
 </html>

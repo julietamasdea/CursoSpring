@@ -21,3 +21,9 @@ Aplicaciones Web
         <artifactId>spring-webmvc</artifactId>
         <version>4.3.25.RELEASE</version>
     </dependency>
+////////
+Peticion desde formulario y obtener respuesta del servidor:
+    Vista -> suele ser un doc jsp o html, realiza una peticion url que pasa por el controlador antes de llegar al servidor
+    Controlador
+    Servidor -> proporciona el documento que se quiere ver, procesa y devuelve una respuesta al controlador y luego llega a la vista
+
