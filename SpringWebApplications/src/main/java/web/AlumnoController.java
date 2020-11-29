@@ -3,24 +3,32 @@ package web;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("v1")
+@RequestMapping("/alumno")
 public class AlumnoController {
 
-    @RequestMapping("/muestraFormularioAlumnos") //no necesariamente tiene que llamarse igual que el metodo
-    public String muestraFormularioAlumnos() { //proporciona el formulario
-        return "formularioAlumnos";
+    @RequestMapping("/verFomularioRegistro")
+    public String verFomularioRegistro(Model model) {
+        //debemos guardar los datos en un objeto alumno
+        Alumno alumno = new Alumno();
+        model.addAttribute("alumno", alumno);
+        return "formularioAlumnoIngreso";
     }
 
-    //metodo para procesar la info que viaja en el formulario
-    @RequestMapping("/procesaFormularioAlumnos") //no necesariamente tiene que llamarse igual que el metodo
-    public String procesaFormularioAlumnos() { //proporciona el formulario
+    @RequestMapping("/procesaFormularioAlumnos")
+    public String procesaFormularioAlumnos() {
         return "formularioAlumnosProcesados";
+    }
+
+    @RequestMapping("/procesarFormularioAlumnosIngreso")
+    public String procesarFormularioAlumnosIngreso(@ModelAttribute("alumno") Alumno alumno) {
+        return "formularioAlumnoIngresoProcesado";
     }
 
     @RequestMapping("/procesaDatosFormularioAlumnos") //no necesariamente tiene que llamarse igual que el metodo

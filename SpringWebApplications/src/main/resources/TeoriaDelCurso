@@ -61,3 +61,20 @@ Por ejemplo, tenemos otro controlador que tiene una ruta igual a la de alumnocon
 Spring no vs a saber a que ruta va a acceder
 En estos casos se pueden establecer rutas relativas --> esto lo hacemos agregando arriba de la clase del controlador, la linea
 @RequestMapping("v1")
+
+/////
+Form MVC tags
+    Vista 1- Va a haber un formulario donde los alumnos se van a registrar (aca usamos  Form MVC tags)
+    Vista 2- Alumno confirmado (JSP tags)
+    Clase alumno para objetos
+    Controlador que gestione todo esto
+
+    Form MVC tags -> son etiquetas reutilizables que construyen bloques HTML. Sirven de puente (data-binding) capaces de enviar y recibir informacion de objetos java (beans) desde codigo html
+    JSP tags - > librerias de etiquetas con apariencia similar a xml utilizadas en paginas JSP. Hacen mas facil la programacion lectura y modificacion de paginas dinamicas
+        No son prescindibles pero si son recomendables
+        Ventajas:
+            - separan el codigo java del HTML
+            - Minimizan el codigo en la pagina web
+            - Hacen el codigo dinamico reutilizable
+
+
