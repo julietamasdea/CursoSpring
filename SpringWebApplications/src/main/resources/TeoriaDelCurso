@@ -96,3 +96,20 @@ https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/ht
             HandBall: <form:checkbox path="deporte" value="HandBall"/>
 
         </td>
+
+Validacion de formularios
+    1) Agregar las librerias de validacion -> Bean validation siguiendo el standard JSR 380
+        Estas librerias se pueden obtener mediante hibernate validation
+    2) especificar propiedades a validar en la clase correspondiente
+    3) Especificar validacion en contenedor
+    4) Especificar mensaje de validacion en formulario de registro
+
+    link donde esta lo que hay que agregar al pom: https://www.baeldung.com/javax-validation
+    Tambien en el link hay ejemplos de validaciones
+	<dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>6.0.13.Final</version>
+    </dependency>
+
+    Aclaracion: el problema de las validaciones de html5, es que se hacen del lado del cliente por lo que podrian quitarse desde el navegador. Lo mas seguro es hacerlo del lado del servidor

@@ -1,4 +1,4 @@
-<%-- 
+<%--
     Document   : pruebaEjemplo
     Created on : Nov 28, 2020, 5:31:56 PM
     Author     : julieta.masdea
@@ -17,12 +17,20 @@
               <table>
                   <tr>
                       <td>Nombre:</td>
-                      <td><form:input path="nombre" /></td>
+                      <td><form:input path="nombre" /> <form:errors path="nombre"/></td>
                   </tr>
                   <tr>
                       <td>Apellido:</td>
-                      <td><form:input path="apellido" /></td>
+                      <td><form:input path="apellido" /> <form:errors path="apellido"/></td>
                   </tr>
+                  <tr>
+                    <td>Edad:</td>
+                    <td><form:input path="edad" /> <form:errors path="edad"/></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><form:input path="email" /> <form:errors path="email"/> </td>
+                </tr>
                   <tr>
                       <td>Asignatura Optativa:</td>
                       <td>
@@ -52,13 +60,7 @@
 
                     </td>
                 </tr>
-                <tr>
-                    <td>Favourite Word:</td>
-                    <td>
-                        <%-- Approach 3: Property is of type java.lang.Object --%>
-                        Magic: <form:checkbox path="favouriteWord" value="Magic"/>
-                    </td>
-                </tr>
+                    <tr>
                       <td colspan="2">
                           <input type="submit" value="Enviar" />
                       </td>

@@ -21,6 +21,8 @@
         <br/>
         Deporte = ${alumno.deporte}
         <br/>
-        Favourite Word = ${alumno.favouriteWord}
+        Edad = ${alumno.edad}
+        <br/>
+        Email = ${alumno.email}
     </body>
 </html>

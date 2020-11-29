@@ -3,11 +3,13 @@ package web;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/alumno")
@@ -27,8 +29,16 @@ public class AlumnoController {
     }
 
     @RequestMapping("/procesarFormularioAlumnosIngreso")
-    public String procesarFormularioAlumnosIngreso(@ModelAttribute("alumno") Alumno alumno) {
-        return "formularioAlumnoIngresoProcesado";
+    public String procesarFormularioAlumnosIngreso(@Valid // esto es para indicar que estamos usando validacion
+                        @ModelAttribute("alumno") Alumno alumno,
+                        BindingResult resultadoValidacion) { //aca se guardan los resultados de validacion
+                                            // si hay errores, nos tiene que devolver al formulario inicial
+                                            //en caso contrario si nos tiene que llevar al formulario de procesado
+        if (resultadoValidacion.hasErrors()) {
+            return "formularioAlumnoIngreso";
+        } else {
+            return "formularioAlumnoIngresoProcesado";
+        }
     }
 
     @RequestMapping("/procesaDatosFormularioAlumnos") //no necesariamente tiene que llamarse igual que el metodo

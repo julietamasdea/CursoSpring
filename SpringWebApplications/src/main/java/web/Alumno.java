@@ -1,13 +1,38 @@
 package web;
 
+import javax.validation.constraints.*;
+
 public class Alumno {
+    @NotNull
+    @Size(min=2, message = "El nombre no puede ser vacio o tener menos de dos caracteres")
     private String nombre;
+    @NotNull
+    @Size(min=2, message = "El apellido no puede ser vacio o tener menos de dos caracteres")
     private String apellido;
     private String asignaturaOptativa;
     private String genero;
     private String deporte;
-    private String favouriteWord;
+    @Email(message = "Email should be valid")
+    private String email;
+    @Min(value = 18, message = "La edad no puede ser menor de 18")
+    @Max(value = 150, message = "La edad no puede ser mayor de 150")
+    private String edad;
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
 
     public String getDeporte() {
         return deporte;
@@ -18,11 +43,11 @@ public class Alumno {
     }
 
     public String getFavouriteWord() {
-        return favouriteWord;
+        return email;
     }
 
-    public void setFavouriteWord(String favouriteWord) {
-        this.favouriteWord = favouriteWord;
+    public void setFavouriteWord(String email) {
+        this.email = email;
     }
 
     public String getGenero() {
