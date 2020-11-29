@@ -31,6 +31,10 @@
                     <td>Email:</td>
                     <td><form:input path="email" /> <form:errors path="email"/> </td>
                 </tr>
+                <tr>
+                    <td>Codigo postal:</td>
+                    <td><form:input path="codigoPostal" /> <form:errors path="codigoPostal"/> </td>
+                </tr>
                   <tr>
                       <td>Asignatura Optativa:</td>
                       <td>

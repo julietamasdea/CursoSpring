@@ -127,3 +127,9 @@ Validacion de formularios
         StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
         webDataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
     }
+
+///////
+    Expresiones regulares
+        Son patrones de busqueda que nos van a permitir encontrar cadenas comparandolas entre ellas o buscando secuencias numericas o hacer que un string cumpla determinadas reglas
+        Class Pattern para expresiones regulares
+        docs.oracle.com/javase/tutorial/essential/regex/char_classes.html

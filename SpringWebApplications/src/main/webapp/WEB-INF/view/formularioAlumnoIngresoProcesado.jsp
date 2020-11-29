@@ -24,5 +24,7 @@
         Edad = ${alumno.edad}
         <br/>
         Email = ${alumno.email}
+        <br/>
+        Codigo Postal = ${alumno.codigoPostal}
     </body>
 </html>

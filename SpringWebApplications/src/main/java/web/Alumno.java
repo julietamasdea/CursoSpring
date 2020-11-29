@@ -17,6 +17,17 @@ public class Alumno {
     @Min(value = 18, message = "La edad no puede ser menor de 18")
     @Max(value = 150, message = "La edad no puede ser mayor de 150")
     private String edad;
+    @Pattern(regexp="[0-9]{5}", message = "El codigo postal debe tener 5 valores numericos")
+    //@Pattern(regexp="[0-9a-zA-Z]{5}", message = "") si quiero que ademas tenga letras
+    private String codigoPostal;
+
+    public String getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public void setCodigoPostal(String codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
 
     public String getEmail() {
         return email;
