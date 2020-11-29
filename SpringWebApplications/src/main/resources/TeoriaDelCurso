@@ -77,4 +77,6 @@ Form MVC tags
             - Minimizan el codigo en la pagina web
             - Hacen el codigo dinamico reutilizable
 
-
+    Menus desplegables y selecciones multiples
+        para seleccion simple --> <form:select path="asignaturaOptativa">
+        para seleccion multiple --> <form:select path="asignaturaOptativa" multiple="true">

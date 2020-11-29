@@ -3,6 +3,15 @@ package web;
 public class Alumno {
     private String nombre;
     private String apellido;
+    private String asignaturaOptativa;
+
+    public String getAsignaturaOptativa() {
+        return asignaturaOptativa;
+    }
+
+    public void setAsignaturaOptativa(String asignaturaOptativa) {
+        this.asignaturaOptativa = asignaturaOptativa;
+    }
 
     public String getNombre() {
         return nombre;

@@ -24,6 +24,18 @@
                       <td><form:input path="apellido" /></td>
                   </tr>
                   <tr>
+                      <td>Asignatura Optativa:</td>
+                      <td>
+                        <form:select path="asignaturaOptativa" multiple="true">
+                            <form:option value="matematica" label="matematica" />
+                            <form:option value="historia" label="historia" />
+                            <form:option value="naturales" label="naturales" />
+                            <form:option value="economia" label="economia" />
+                        </form:select>
+                      </td>
+
+                  </tr>
+                  <tr>
                       <td colspan="2">
                           <input type="submit" value="Enviar" />
                       </td>

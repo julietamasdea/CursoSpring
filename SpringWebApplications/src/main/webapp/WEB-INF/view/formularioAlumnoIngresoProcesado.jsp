@@ -14,5 +14,6 @@
     </head>
     <body>
         El alumno ${alumno.nombre} ${alumno.apellido} ya esta inscripto
+        La asignatura escogida es ${alumno.asignaturaOptativa}
     </body>
 </html>
