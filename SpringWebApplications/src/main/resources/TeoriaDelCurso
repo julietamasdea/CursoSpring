@@ -45,3 +45,7 @@ Levantar servidor
 En al ruta de glassfish: C:\AppServers\glassfish-5.0.1\glassfish5\glassfish\bin>
 ejecutar el comando: asadmin deploy C:\Users\julieta.masdea\Desktop\SpringWebApplications-1.0.war
 despues en la url:  http://localhost:8080/SpringWebApplications-1.0/
+
+
+/////
+@RequestParam nos facilita el trabajo de rescatar en un metodo parametros que hacemos con un request
