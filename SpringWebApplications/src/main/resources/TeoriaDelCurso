@@ -49,3 +49,15 @@ despues en la url:  http://localhost:8080/SpringWebApplications-1.0/
 
 /////
 @RequestParam nos facilita el trabajo de rescatar en un metodo parametros que hacemos con un request
+
+////
+@RequestMapping
+Conflictos que pueden aparecer cuando usamos los request mapping
+    Actualmente tenemos dos controladores:
+       AlumnoController -> muestra el formulario, y los procesadores del formulario
+       Controlador -> muestra la pagina de inicio, la raiz del proyecto
+Para todas estas rutas usamos @RequestMapping, si el proyecto es complejo, seguramente tenga mas de dos controladores
+Por ejemplo, tenemos otro controlador que tiene una ruta igual a la de alumnocontroller, aca vamos a tener un problema con la ruta porque no va a ser unica,
+Spring no vs a saber a que ruta va a acceder
+En estos casos se pueden establecer rutas relativas --> esto lo hacemos agregando arriba de la clase del controlador, la linea
+@RequestMapping("v1")

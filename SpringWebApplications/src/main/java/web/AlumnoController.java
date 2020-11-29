@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("v1")
 public class AlumnoController {
 
     @RequestMapping("/muestraFormularioAlumnos") //no necesariamente tiene que llamarse igual que el metodo

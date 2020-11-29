@@ -14,6 +14,6 @@
     </head>
     <body>
         <h1>Hello World! from paginaEjemplo</h1>
-    <a href="muestraFormularioAlumnos">Ir al formulario</a>
+    <a href="v1/muestraFormularioAlumnos">Ir al formulario</a>
     </body>
 </html>
