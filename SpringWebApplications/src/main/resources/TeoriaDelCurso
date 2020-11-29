@@ -133,3 +133,9 @@ Validacion de formularios
         Son patrones de busqueda que nos van a permitir encontrar cadenas comparandolas entre ellas o buscando secuencias numericas o hacer que un string cumpla determinadas reglas
         Class Pattern para expresiones regulares
         docs.oracle.com/javase/tutorial/essential/regex/char_classes.html
+
+    ///
+    Errores personalizados
+        Manejo de excepciones
+        internacionalizacion de mensajes spring --> MessageSourceResourceBundle en https://docs.spring.io/spring-framework/docs/current/javadoc-api/
+        Tenemos que crear un archivo messageProperties, indicandole que mensaje queremos que se muestre cuando pasa x error
