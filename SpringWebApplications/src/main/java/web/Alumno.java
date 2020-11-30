@@ -1,5 +1,7 @@
 package web;
 
+import web.validations.CodigoPostalMadrid;
+
 import javax.validation.constraints.*;
 
 public class Alumno {
@@ -17,6 +19,7 @@ public class Alumno {
     @Min(value = 18, message = "La edad no puede ser menor de 18")
     @Max(value = 150, message = "La edad no puede ser mayor de 150")
     private String edad;
+    @CodigoPostalMadrid
     @Pattern(regexp="[0-9]{5}", message = "El codigo postal debe tener 5 valores numericos")
     //@Pattern(regexp="[0-9a-zA-Z]{5}", message = "") si quiero que ademas tenga letras
     private String codigoPostal;

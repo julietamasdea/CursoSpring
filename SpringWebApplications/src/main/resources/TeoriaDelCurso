@@ -139,3 +139,8 @@ Validacion de formularios
         Manejo de excepciones
         internacionalizacion de mensajes spring --> MessageSourceResourceBundle en https://docs.spring.io/spring-framework/docs/current/javadoc-api/
         Tenemos que crear un archivo messageProperties, indicandole que mensaje queremos que se muestre cuando pasa x error
+
+///////
+Validaciones propias con mvc-custom-validator
+    https://www.baeldung.com/spring-mvc-custom-validator
+    java/web/validations
