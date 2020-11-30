@@ -1,0 +1,3 @@
+web.AlumnoController=org.springframework.stereotype.Component
+web.Cliente=javax.persistence.Entity,javax.persistence.Table
+web.Controlador=org.springframework.stereotype.Component

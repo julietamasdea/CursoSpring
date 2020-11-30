@@ -1,0 +1,29 @@
+//////
+Hibernate - acceso a datos
+    Como acceder a datos almacenados en base de datos
+    lo vamos a hacer usando hibernate
+    Hibernate:
+        Que es: Es un framework que facilita los accesos a las BD desde apps java
+        Nhibernate sirve para .net
+        Permite leer actualizar y eliminar la info de la BD de una manera simplificada
+        Utiliza ORM para el acceso de datos:
+            ORM(Mapa de objeto relacional) convierte las tablas en entidades -> utiliza el concepto de POO para acceder a las BD, para ello transforma las tablas en entidades con propiedades
+        Ventajas:
+            Permite olvidarnos del lenguaje SQL
+            Minimiza el codigo JDBC de acceso a datos
+            Abstrae del codigo SQL
+            Proporciona seguridad adicional contra ataque a datos
+            Automatiza tareas CRUD (ABM)
+
+    ¿Como funciona un framework ORM a la hora de mapear datos?
+    Tenemos una clase en la cual queremos guardar clientes (ejemplo con nombre, apellido, telefono), hibernate lo que hace gracias a ORM, e interpreta que cada uno de los atributos corresponde a un campo de una tabla de la BD, y ademas las transacciones que podemos realizar entre nuestra app y la tabla, son de manera automatica sin tener que hacer sentencias SQL.
+    Esto lo hace, desde la aplicacion, para insertar un objeto:
+        Guardar -> int id = (Integer) session.save(cliente) donde cliente es un objeto de la clase Cliente
+        Leer -> Cliente cliente = session.get(Cliente.class, id)
+
+    Requisitos para usar hibernate:
+        Tenemos que usar SGBD. En el curso usamos MySQL
+        MySql Workbench
+        Instalar driver JDBC
+        Instalar librerias Hibernate
+

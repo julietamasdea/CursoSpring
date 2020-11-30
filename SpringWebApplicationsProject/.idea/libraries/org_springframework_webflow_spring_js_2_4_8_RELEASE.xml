@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="org.springframework.webflow:spring-js:2.4.8.RELEASE" type="repository">
+    <properties maven-id="org.springframework.webflow:spring-js:2.4.8.RELEASE" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-js-2.4.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-js-resources-2.4.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-4.3.19.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-4.3.19.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-aop-4.3.19.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-expression-4.3.19.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-4.3.19.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-4.3.19.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-4.3.19.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
